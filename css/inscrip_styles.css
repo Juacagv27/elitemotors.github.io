@@ -1,0 +1,131 @@
+.banner {
+      background-image: url('../imagenes/slide_3.jpg'); 
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .banner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .banner-content {
+      z-index: 2;
+      max-width: 90%;
+    }
+
+    .banner h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 1.1rem;
+    }
+
+    @media (min-width: 768px) {
+      .banner h1 {
+        font-size: 2.5rem;
+      }
+
+      .banner p {
+        font-size: 1.25rem;
+      }
+    }
+
+    footer {
+      background-color: #111;
+      color: #eee;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-logo {
+      flex: 1 1 200px;
+      margin: 20px;
+    }
+
+    .footer-logo img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 12px;
+    }
+
+    .footer-logo p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 20px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 16px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+      color: #D91E1E;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-logo,
+      .footer-section {
+        margin: 20px 0;
+      }
+
+      .footer-logo img {
+        margin: 0 auto 12px auto;
+      }
+    }
